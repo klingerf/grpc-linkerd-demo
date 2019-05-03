@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package buoyantio.bb;
+
+message TheRequest {
+    string requestUID = 1;
+}
+
+message TheResponse {
+    string requestUID = 1;
+    string payload = 2;
+}
+
+service TheService {
+    rpc theFunction (TheRequest) returns (TheResponse) {
+    }
+}
