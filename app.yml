@@ -20,6 +20,8 @@ spec:
       app: rest-backend
   template:
     metadata:
+      annotations:
+        linkerd.io/inject: enabled
       labels:
         app: rest-backend
     spec:
@@ -54,6 +56,8 @@ spec:
       app: grpc-backend
   template:
     metadata:
+      annotations:
+        linkerd.io/inject: enabled
       labels:
         app: grpc-backend
     spec:
